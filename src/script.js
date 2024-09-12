@@ -1,13 +1,19 @@
-// JavaScript function to handle button click
-function _increaseCount() {
-    // Get the <p> element by its id
-    let countElement = document.getElementById("count")
+window.addEventListener("scroll", function () {
+    const container = document.querySelector(".div-style")
+    const img = document.createElement("img")
+    img.src = "../assets/body.jpeg"
+    img.alt = "longcat"
+    img.className = "img-no-margin"
+    container.appendChild(img)
+})
 
-    // Get the current count from the <p> text
-    let currentCount = parseInt(countElement.innerText.replace("Count is ", ""))
-
-    // Increment the count
-    const newCount = currentCount + 1
-    // Update the <p> text with the new count
-    countElement.innerText = "Count is " + newCount
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".div-style")
+    for (let i = 10; i <= 30; i++) {
+        const img = document.createElement("img")
+        img.src = "../assets/body.jpeg"
+        img.alt = "longcat"
+        img.className = "img-no-margin"
+        container.appendChild(img)
+    }
+})

@@ -4,7 +4,11 @@
   "description": "static html website practice",
   "main": "script.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+	"lint:js": "eslint '**/*.js'",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:html": "htmlhint '**/*.html'",
+    "format": "prettier --write '**/*.{js,css,html}'"
   },
   "author": "",
   "license": "ISC",
